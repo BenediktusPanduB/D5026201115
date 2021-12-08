@@ -61,7 +61,7 @@ body{
 
 }
 
-.nav-link:active{
+.nav-link a:active{
     color: #f8b739;
     margin-left: 10px;
 }
@@ -216,8 +216,8 @@ body{
                 </div>
                 <div class="socialMedia">
                     <a target="_blank"  href="https://www.instagram.com/benedictpandu/"><i class='bx bxl-instagram' ></i></a>
-                    <a target="_blank" href=""><i class='bx bxl-github' ></i></a>
-                    <a target="_blank" href=""><i class='bx bxl-linkedin' ></i></a>
+                    <a target="_blank" href="https://github.com/BenediktusPanduB"><i class='bx bxl-github' ></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/benediktus-pandu-399135148/"><i class='bx bxl-linkedin' ></i></a>
 
                 </div>
             </div>
