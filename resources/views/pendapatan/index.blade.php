@@ -1,5 +1,5 @@
 @extends('layout.happy')
-@section('title', 'Data Absen')
+@section('title', 'Data Pendapatan')
 
 
 @section('konten')
