@@ -15,14 +15,14 @@
         </div>
 	<table  class="table table-sm table-hover table-bordered align-middle">
 		<tr>
-			<th width="20%">ID Pegawai</th>
+			<th width="20%">Nama Pegawai</th>
 			<th width="10%">Tanggal</th>
 			<th width="10%">Status</th>
             <th width="20%" colspan="2">Opsi</th>
 		</tr>
 		@foreach($absen as $p)
 		<tr>
-			<td>{{ $p->IDPegawai }}</td>
+			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->Tanggal }}</td>
 			<td>{{ $p->Status }}</td>
 
@@ -32,6 +32,6 @@
 		</tr>
 		@endforeach
 	</table>
-
+{{ $absen->links()  }}
     </div>
 @endsection
