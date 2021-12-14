@@ -7,7 +7,6 @@
 
     <div class="container my-5">
         <h2>Data Pendapatan</h2>
-        <h6>Benediktus Pandu B</h6>
 
         <div class="row mt-5">
             <div class="col-3">

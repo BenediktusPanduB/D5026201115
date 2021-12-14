@@ -27,7 +27,8 @@ class PegawaiController extends Controller
 		$pegawai = DB::table('pegawai')
 		->where('pegawai_nama','like',"%".$cari."%")
         ->orWhere('pegawai_alamat','like',"%".$cari."%")
-		->paginate(5);
+        ->orWhere('pegawai_jabatan','like',"%".$cari."%")
+		->paginate(10);
 
     	// mengirim data pegawai ke view index
 		return view('pegawai.index',['pegawai' => $pegawai]);

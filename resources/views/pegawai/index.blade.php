@@ -27,9 +27,9 @@
 	<table  class="table table-hover table-bordered align-middle">
 		<tr>
 			<th width="20%">Nama Lengkap</th>
-			<th width="10%">Jabatan</th>
+			<th width="15%">Jabatan</th>
 			<th width="10%">Umur</th>
-			<th width="25%">Alamat</th>
+			<th width="15%">Alamat</th>
             <th width="20%" colspan="3">Opsi</th>
 		</tr>
 		@foreach($pegawai as $p)
