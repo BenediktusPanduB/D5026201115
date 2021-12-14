@@ -45,6 +45,7 @@ Route::get('/pendapatan/edit/{id}','PendapatanController@edit');
 Route::post('/pendapatan/update','PendapatanController@update');
 Route::get('/pendapatan/hapus/{id}','PendapatanController@hapus');
 Route::get('/pendapatan/cari','pendapatanController@cari');
+Route::get('/pendapatan/detail/{id}','pendapatanController@view');
 
 
 Route::get('/absen','AbsenController@index');

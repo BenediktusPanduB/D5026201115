@@ -72,10 +72,15 @@ body{
 }
 
 .footer{
-    position: relative;;
+    position: relative;
     width: 100%;
     bottom:0;
     margin-top: auto;
+    z-index: 1;
+}
+
+section .p-4BUl .my-container{
+    height: 1080px;
 }
 
 .footer .display-6{
@@ -144,15 +149,6 @@ body{
         pointer-events: none;
     }
 
-    nav .footer .socialMedia{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer .socialMedia a{
-        text-align: center;
-    }
-
     .my-container{
     margin-left: 100px;
     }
@@ -208,17 +204,7 @@ body{
                     </a>
                 </li>
             </ul>
-            <div class="footer">
-                <div class="copyright display-6  mb-4 ">
-                    © Benediktus Pandu B <br> 5026201115
-                </div>
-                <div class="socialMedia">
-                    <a target="_blank"  href="https://www.instagram.com/benedictpandu/"><i class='bx bxl-instagram' ></i></a>
-                    <a target="_blank" href="https://github.com/BenediktusPanduB"><i class='bx bxl-github' ></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/benediktus-pandu-399135148/"><i class='bx bxl-linkedin' ></i></a>
 
-                </div>
-            </div>
         </nav>
     <section class="p-4 my-container">
         <button id="menu-btn" class="btn btn-warning">
@@ -229,6 +215,17 @@ body{
             @section('konten')
 
             @show
+        </div>
+        <div class="footer">
+            <div class="copyright display-6  mb-4 ">
+                © 2021  <br> Benediktus Pandu B 5026201115
+            </div>
+            <div class="socialMedia">
+                <a target="_blank"  href="https://www.instagram.com/benedictpandu/"><i class='bx bxl-instagram' ></i></a>
+                <a target="_blank" href="https://github.com/BenediktusPanduB"><i class='bx bxl-github' ></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/benediktus-pandu-399135148/"><i class='bx bxl-linkedin' ></i></a>
+
+            </div>
         </div>
     </section>
 

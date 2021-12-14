@@ -59,7 +59,7 @@ class bukuController extends Controller
     public function update(Request $request)
     {
         // update data buku
-        DB::table('buku')->where('kodebuku', $request->id)->update([
+        DB::table('buku')->where('kodebuku', $request->kodebuku)->update([
             'merkbuku' => $request->merkbuku,
             'stockbuku' => $request->stockbuku,
             'tersedia' => $request->tersedia,

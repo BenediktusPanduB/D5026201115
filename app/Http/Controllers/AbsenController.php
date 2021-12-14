@@ -65,7 +65,7 @@ public function edit($id)
 public function update(Request $request)
 {
 	// update data absen
-	DB::table('absen')->where('ID',$request->id)->update([
+	DB::table('absen')->where('ID',$request->ID)->update([
 		'IDPegawai' => $request->idpegawai,
 		'Tanggal' => $request->tanggal,
 		'Status' => $request->status

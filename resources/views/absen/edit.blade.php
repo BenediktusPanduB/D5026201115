@@ -21,8 +21,7 @@
             </div>
             <div class="mb-3">
                 <label for="IDPegawai" class="form-label">ID Pegawai</label>
-                <input type="text" name="IDPegawai" class="form-control" id="IDPegawai" pattern="[\d0-9]{0,}" maxlength="11" required ="required" value="{{ $a -> IDPegawai }}">
-
+                <input type="text" name="idpegawai" class="form-control" id="IDPegawai"  maxlength="11" required ="required" value="{{ $a -> IDPegawai }}">
             </div>
             <div class="mb-3">
                 <label for="tanggal" class="form-label">Tanggal</label>

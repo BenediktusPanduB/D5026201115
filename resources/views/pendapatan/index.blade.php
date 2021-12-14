@@ -32,7 +32,7 @@
 			<th width="10%">Tahun</th>
 			<th width="15%">Gaji</th>
 			<th width="15%">Tunjangan</th>
-            <th width="20%" colspan="2">Opsi</th>
+            <th width="21%" colspan="3">Opsi</th>
 		</tr>
 		@foreach($pendapatan as $p)
 		<tr>
@@ -41,8 +41,9 @@
 			<td>{{ $p->Tahun }}</td>
 			<td>{{ $p->Gaji }}</td>
 			<td>{{ $p->Tunjangan }}</td>
-			<td><a class="btn btn-warning btn-md" href="/pendapatan/edit/{{ $p->ID }}">Edit</a></td>
-			<td><a class="btn btn-danger btn-md" href="/pendapatan/hapus/{{ $p->ID }}">Hapus</a></td>
+			<td width="7%"><a class="btn btn-warning btn-md" href="/pendapatan/edit/{{ $p->ID }}">Edit</a></td>
+			<td width="7%"><a class="btn btn-secondary btn-md" href="/pendapatan/detail/{{ $p->ID }}">View</td>
+			<td width="7%"><a class="btn btn-danger btn-md" href="/pendapatan/hapus/{{ $p->ID }}">Hapus</a></td>
 
 		</tr>
 		@endforeach

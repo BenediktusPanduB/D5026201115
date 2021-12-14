@@ -9,7 +9,7 @@
         <form action="/pegawai/update" method="POST">
             {{ csrf_field() }}
             <div class="mb-3">
-                <input type="hidden" name="ID" value="{{ $p->pegawai_id}}">
+                <input type="hidden" name="id" value="{{ $p->pegawai_id}}">
             </div>
             <div class="mb-3">
                 <label for="nama" class="form-label">Nama</label>
