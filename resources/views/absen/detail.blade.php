@@ -1,63 +1,63 @@
 @extends('layout.happy')
-@section('title', 'Data Pegawai')
+@section('title', 'Data Absen')
 
 @section('konten')
 
     <div class="container my-5">
         <h2 class="my-5">Detail Data</h2>
-        @foreach($pegawai as $p)
+        @foreach($absen as $b)
             <div class=" row mb-3">
-                <div class="col-1">
-                     <label class="form-label">Nama</label>
+                <div class="col-2">
+                     <label class="form-label">ID Pegawai</label>
                 </div>
                 <div class="col-1">
                     <label class="form-label">:</label>
                </div>
                 <div class="col-3">
-                    <label  class="form-label">{{ $p -> pegawai_nama }}</label>
+                    <label  class="form-label">{{ $b -> IDPegawai }}</label>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-1">
-                    <label for="jabaran" class="form-label">Jabatan</label>
+                <div class="col-2">
+                    <label class="form-label">Nama Pegawai</label>
                </div>
                <div class="col-1">
                    <label class="form-label">:</label>
               </div>
                <div class="col-3">
-                   <label  class="form-label">{{ $p -> pegawai_jabatan }}</label>
+                   <label  class="form-label">{{ $b -> pegawai_nama }}</label>
                </div>
             </div>
             <div class="row mb-3">
-                <div class="col-1">
-                    <label class="form-label">Umur</label>
+                <div class="col-2">
+                    <label class="form-label">Tanggal</label>
                </div>
                <div class="col-1">
                    <label class="form-label">:</label>
               </div>
                <div class="col-3">
-                   <label  class="form-label">{{ $p -> pegawai_umur }}</label>
+                   <label  class="form-label">{{ $b -> Tanggal }}</label>
                </div>
             </div>
             <div class="row mb-3">
-                <div class="col-1">
-                    <label class="form-label">Alamat</label>
+                <div class="col-2">
+                    <label class="form-label">Status</label>
                </div>
                <div class="col-1">
                    <label class="form-label">:</label>
               </div>
                <div class="col-3">
-                   <label  class="form-label">{{ $p -> pegawai_alamat }}</label>
+                   <label  class="form-label">{{ $b -> Status }}</label>
                </div>
             </div>
 
-            <a href="/pegawai"class="btn btn-warning">Back</a>
+            <a href="/absen"class="btn btn-warning">Back</a>
 
         @endforeach
 
     </div>
 
-    
+
 @endsection
 
 

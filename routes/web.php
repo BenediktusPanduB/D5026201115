@@ -27,15 +27,14 @@ Route::get('dictionary',"ViewController@showDictionary");
 Route::post('answerDictionary',"ViewController@answer");
 
 //route CRUD
-Route::get('/pegawai','PegawaiController@index');
-
-Route::get('/pegawai/tambah','PegawaiController@tambah');
-Route::post('/pegawai/store','PegawaiController@store');
-Route::get('/pegawai/edit/{id}','PegawaiController@edit');
-Route::post('/pegawai/update','PegawaiController@update');
-Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
-Route::get('/pegawai/cari','PegawaiController@cari');
-Route::get('/pegawai/detail/{id}','PegawaiController@view');
+Route::get('/pegawai','pegawaiController@index');
+Route::get('/pegawai/tambah','pegawaiController@tambah');
+Route::post('/pegawai/store','pegawaiController@store');
+Route::get('/pegawai/edit/{id}','pegawaiController@edit');
+Route::post('/pegawai/update','pegawaiController@update');
+Route::get('/pegawai/hapus/{id}','pegawaiController@hapus');
+Route::get('/pegawai/cari','pegawaiController@cari');
+Route::get('/pegawai/detail/{id}','pegawaiController@view');
 
 
 //route CRUD ABSEN
@@ -45,6 +44,7 @@ Route::post('/pendapatan/store','PendapatanController@store');
 Route::get('/pendapatan/edit/{id}','PendapatanController@edit');
 Route::post('/pendapatan/update','PendapatanController@update');
 Route::get('/pendapatan/hapus/{id}','PendapatanController@hapus');
+Route::get('/pendapatan/cari','pendapatanController@cari');
 
 
 Route::get('/absen','AbsenController@index');
@@ -53,4 +53,15 @@ Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+Route::get('/absen/detail/{id}','absenController@view');
+
+Route::get('/buku','bukuController@index');
+Route::get('/buku/tambah','bukuController@tambah');
+Route::post('/buku/store','bukuController@store');
+Route::get('/buku/edit/{kodebuku}','bukuController@edit');
+Route::post('/buku/update','bukuController@update');
+Route::get('/buku/hapus/{kodebuku}','bukuController@hapus');
+Route::get('/buku/cari','bukuController@cari');
+Route::get('/buku/detail/{kodebuku}','bukuController@view');
+
 

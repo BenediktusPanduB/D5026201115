@@ -83,5 +83,15 @@ public function hapus($id)
 	// alihkan halaman ke halaman pegawai
 	return redirect('/absen');
 }
+public function view($id)
+{
+    // mengambil data absen berdasarkan id yang dipilih
+    $absen = DB::table('absen')
+    ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
+    ->select('absen.*', 'pegawai.pegawai_nama')
+    ->where('IDPegawai', $id)->get();
+    // passing data absen yang didapat ke view edit.blade.php
+    return view('absen.detail', ['absen' => $absen]);
+}
 
 }

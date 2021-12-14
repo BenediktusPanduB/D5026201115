@@ -158,6 +158,10 @@ body{
     }
 
 }
+    table td,
+        th {
+            text-align: center;
+        }
 
 
 
@@ -198,15 +202,9 @@ body{
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link my-lg-2">
-                        <i class='bx bxl-gitlab'></i>
-                        <span>Minggu Depan</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/#" class="nav-link my-lg-2">
-                        <i class='bx bxl-gitlab'></i>
-                        <span>Praktikum</span>
+                    <a href="/buku" class="nav-link my-lg-2">
+                        <i class='bx bx-book'></i>
+                        <span>Buku</span>
                     </a>
                 </li>
             </ul>

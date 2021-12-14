@@ -18,7 +18,7 @@
 			<th width="20%">Nama Pegawai</th>
 			<th width="10%">Tanggal</th>
 			<th width="10%">Status</th>
-            <th width="20%" colspan="2">Opsi</th>
+            <th width="21%" colspan="3">Opsi</th>
 		</tr>
 		@foreach($absen as $p)
 		<tr>
@@ -26,8 +26,9 @@
 			<td>{{ $p->Tanggal }}</td>
 			<td>{{ $p->Status }}</td>
 
-			<td><a class="btn btn-warning btn-md" href="/absen/edit/{{ $p->ID }}">Edit</a></td>
-			<td><a class="btn btn-danger btn-md" href="/absen/hapus/{{ $p->ID }}">Hapus</a></td>
+			<td width="7%"><a class="btn btn-warning btn-md" href="/absen/edit/{{ $p->ID }}">Edit</a></td>
+            <td width="7%"><a class="btn btn-secondary btn-md" href="/absen/detail/{{ $p->IDPegawai }}">View</td>
+			<td width="7%"><a class="btn btn-danger btn-md" href="/absen/hapus/{{ $p->ID }}">Hapus</a></td>
 
 		</tr>
 		@endforeach
