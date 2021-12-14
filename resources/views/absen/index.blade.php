@@ -24,7 +24,7 @@
                 <a href="/absen/tambah" class="btn btn-md btn-primary mb-3"> Tambah Data</a>
             </div>
         </div>
-	<table  class="table table-sm table-hover table-bordered align-middle">
+	<table  class="table table-hover table-bordered align-middle">
 		<tr>
 			<th width="20%">Nama Pegawai</th>
 			<th width="10%">Tanggal</th>
