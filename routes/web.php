@@ -54,6 +54,7 @@ Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
 Route::get('/absen/detail/{id}','absenController@view');
+Route::get('/absen/cari','absenController@cari');
 
 Route::get('/buku','bukuController@index');
 Route::get('/buku/tambah','bukuController@tambah');

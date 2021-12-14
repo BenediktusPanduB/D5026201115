@@ -93,5 +93,19 @@ public function view($id)
     // passing data absen yang didapat ke view edit.blade.php
     return view('absen.detail', ['absen' => $absen]);
 }
+public function cari(Request $request)
+    {
+        // menangkap data pencarian
+        $cari = $request->cari;
+
+        // mengambil data dari table absen sesuai pencarian data
+        $absen = DB::table('absen')
+        ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
+        ->select('absen.*', 'pegawai.pegawai_nama')
+        ->where('pegawai_nama', 'like', "%" . $cari . "%")
+        ->paginate();
+        // mengirim data absen ke view index
+        return view('absen.index', ['absen' => $absen]);
+    }
 
 }

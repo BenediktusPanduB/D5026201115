@@ -8,8 +8,19 @@
     <div class="container my-5">
         <h2>Data Absen</h2>
 
-        <div class="row ">
-            <div class="col-12 d-flex justify-content-end">
+        <div class="row mt-5">
+            <div class="col-3">
+                <form action="/absen/cari" method="GET">
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="text" name="cari" placeholder="Cari Absen .." value="{{ request('cari') }}">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-success" type="submit">Find</button>
+                        </div>
+                      </div>
+                </form>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-3 d-flex justify-content-end">
                 <a href="/absen/tambah" class="btn btn-md btn-primary mb-3"> Tambah Data</a>
             </div>
         </div>

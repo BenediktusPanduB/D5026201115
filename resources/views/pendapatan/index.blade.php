@@ -27,16 +27,16 @@
         </div>
 	<table  class="table table-hover table-bordered align-middle">
 		<tr>
-			<th width="10%">ID Pegawai</th>
+			<th width="20%">Nama Pegawai</th>
 			<th width="10%">Bulan</th>
 			<th width="10%">Tahun</th>
-			<th width="20%">Gaji</th>
-			<th width="20%">Tunjangan</th>
+			<th width="15%">Gaji</th>
+			<th width="15%">Tunjangan</th>
             <th width="20%" colspan="2">Opsi</th>
 		</tr>
 		@foreach($pendapatan as $p)
 		<tr>
-			<td>{{ $p->IDPegawai }}</td>
+			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->Bulan }}</td>
 			<td>{{ $p->Tahun }}</td>
 			<td>{{ $p->Gaji }}</td>
