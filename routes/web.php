@@ -66,4 +66,8 @@ Route::get('/buku/hapus/{kodebuku}','bukuController@hapus');
 Route::get('/buku/cari','bukuController@cari');
 Route::get('/buku/detail/{kodebuku}','bukuController@view');
 
-
+Route::get('/keranjangbelanja','KeranjangBelanjaController@index');
+Route::get('/keranjangbelanja/tambah','KeranjangBelanjaController@tambah');
+Route::post('/keranjangbelanja/store','KeranjangBelanjaController@store');
+Route::get('/keranjangbelanja/hapus/{id}','KeranjangBelanjaController@hapus');
+Route::get('/keranjangbelanja/cari','KeranjangBelanjaController@cari');

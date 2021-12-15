@@ -203,6 +203,12 @@ section .p-4BUl .my-container{
                         <span>Buku</span>
                     </a>
                 </li>
+                <li>
+                    <a href="/keranjangbelanja" class="nav-link my-lg-2">
+                        <i class='bx bxs-cart-alt'></i>
+                        <span>Keranjang Belanja</span>
+                    </a>
+                </li>
             </ul>
 
         </nav>
